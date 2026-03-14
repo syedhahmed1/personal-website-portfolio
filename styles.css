@@ -97,6 +97,32 @@ img {
   box-shadow: var(--shadow);
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 360px);
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-photo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-photo {
+  width: min(100%, 320px);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid rgba(215, 222, 234, 0.95);
+  box-shadow: 0 24px 48px rgba(18, 31, 53, 0.16);
+  background: linear-gradient(180deg, #f4f7fc 0%, #e7eef9 100%);
+}
+
 .eyebrow,
 .section-label {
   margin: 0 0 0.75rem;
@@ -280,12 +306,20 @@ img {
     align-items: flex-start;
   }
 
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
   .hero {
     padding-top: 4rem;
   }
 
   .hero-content {
     padding: 2rem;
+  }
+
+  .hero-photo {
+    width: min(100%, 280px);
   }
 
   .skills-grid {
