@@ -244,14 +244,20 @@ img {
 }
 
 .tag-list,
-.contact-list {
+.contact-list,
+.detail-list {
   margin: 1rem 0 0;
   padding-left: 1.1rem;
 }
 
 .tag-list li + li,
-.contact-list li + li {
+.contact-list li + li,
+.detail-list li + li {
   margin-top: 0.55rem;
+}
+
+.detail-list {
+  color: var(--muted);
 }
 
 .contact-card {
